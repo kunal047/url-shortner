@@ -13,6 +13,7 @@ $ cd url-shortner
 $ npm install
 $ npm start
 ```
+You can access the postman collection [here](https://www.getpostman.com/collections/1d41fa87006d90029cb0)
 
 ### Docker
 By default, the Docker will expose port 3000, so change this within the Dockerfile if necessary. When ready, simply use the Dockerfile to build the image.
