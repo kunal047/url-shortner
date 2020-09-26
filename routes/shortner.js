@@ -17,7 +17,7 @@ module.exports = (fastify, opts, done) => {
                         pattern: '^[0-9a-zA-Z_]{6}$',
                     },
                 },
-                required: ['url', 'shortcode']
+                required: ['url']
             },
         },
         attachValidation: true,
@@ -33,10 +33,11 @@ module.exports = (fastify, opts, done) => {
                 properties: {
                     shortcode: {
                         type: 'string',
-                        pattern: '^[0-9a-zA-Z_]{6}$',
+                        pattern: '^[0-9a-zA-Z_]{4,}$',
                     }
-                }
-            }
+                },
+            },
+            required: true,
         },
         attachValidation: true
     }, controller.get);
@@ -51,10 +52,11 @@ module.exports = (fastify, opts, done) => {
                 properties: {
                     shortcode: {
                         type: 'string',
-                        pattern: '^[0-9a-zA-Z_]{6}$',
+                        pattern: '^[0-9a-zA-Z_]{4,}$',
                     }
-                }
-            }
+                },
+            },
+            required: true,
         },
         attachValidation: true
     }, controller.stats);
