@@ -1,0 +1,26 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "url shortner with stats",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "url",
+    "url",
+    "shortner"
+  ],
+  "author": "kunal",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.4.1",
+    "fastify-cors": "^4.1.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^4.2.1",
+    "tap": "^14.10.8"
+  }
+}
