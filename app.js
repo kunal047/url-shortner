@@ -10,7 +10,7 @@ fastify.register(fastify_cors, {
 fastify.get("/", async (request, reply) => {
     return { hello: "world" };
 });
-fastify.register(require('./routes/shortner'), { prefix: '/api/v1/shortner' });
+fastify.register(require('./routes/shortner'), { prefix: '/api/v1' });
 
 // Run the server!
 const start = async () => {

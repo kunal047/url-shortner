@@ -17,7 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^3.4.1",
-    "fastify-cors": "^4.1.0"
+    "fastify-cors": "^4.1.0",
+    "moment": "^2.29.0",
+    "node-persist": "^3.1.0"
   },
   "devDependencies": {
     "pino-pretty": "^4.2.1",
