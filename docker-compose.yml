@@ -3,7 +3,10 @@ services:
     api:
         build:
             dockerfile: Dockerfile
-            context: ./
+            context: .
+        restart: unless-stopped
         volumes: 
             - /app/node_modules
             - ./:/app
+        ports: 
+            - '3000:3000'
