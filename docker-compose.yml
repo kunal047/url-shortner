@@ -1,23 +1,9 @@
 version: '3'
 services:
-    redis:
-        image: 'redis:latest'
-    nginx:
-        depends_on:
-            - api
-        restart: always
-        build: 
-            dockerfile: Dockerfile
-            context: ./nginx
-        ports: 
-            - '3000:80'
     api:
         build:
             dockerfile: Dockerfile
-            context: ./app.js
+            context: ./
         volumes: 
             - /app/node_modules
-            - :/app
-        environment:
-            - REDIS_HOST=redis
-            - REDIS_PORT=6379
+            - ./:/app
